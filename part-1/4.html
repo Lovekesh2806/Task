@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schoolcrop</title>
+    <link rel="stylesheet" href="../../Assets/css/styles.css">
+</head>
+<body>
+    <h2>Guess my number : Your friend chooses an integer between 0 and 100. You have to find out that number by asking questions, but your friend can only answer ‘Yes’ or ‘No’. What strategy would you use ?</h2>
+    <div id="answer">
+        <p>Let my friend choosen 73; then my questions may be like this.</p>
+        <h3>Q : Does it lie in the first 50 numbers ?</h3>
+        <p>A: No </p>
+        <h3>Q : Does it lie in the first 50 and 60 ?</h3>
+        <p>A: No </p>
+        <h3>Q : Does it lie in the first 60 and 70 ?</h3>
+        <p>A: No </p>
+        <h3>Q : Does it lie in the first 70 and 80 ?</h3>
+        <p>A: Yes </p>
+        <p>[then my guess would be “it is a number from 70 to 80]</p>
+        <h3>Q : Is it an even number ?</h3>
+        <p>A: No </p>
+        <p>[my guess : it should be one of the numbers 71, 73, 75, 77 and 79]</p>
+        <h3>Q : Is it a prime number ?</h3>
+        <p>A: Yes</p>
+        <p>[my guess : it may be 71, 73 or 79]</p>
+        <h3>Q : Is it less than 75 ?</h3>
+        <p>A: Yes</p>
+        <p>[my guess : it may be either 71 or 73]</p>
+        <h3>Q : Is it less than 72 ?</h3>
+        <p>A: No</p>
+        <p>Then the number is 73.</p>
+        <p>Therefore the strategy is</p>
+        <p>→ Use number properties such as even, odd, composite or prime to determine the number.</p>
+    </div>
+    <div class="button-container">
+        <!-- <button id="check-button" onclick="checkAnswers()">Check Answer</button> -->
+        <button id="clear-button" onclick="clearAnswers(); clear_Answers();">Clear</button>
+    </div>
+    <script src="../../Assets/js/javascript.js"></script>
+</body>
+</html>
